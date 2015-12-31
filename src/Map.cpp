@@ -116,7 +116,7 @@ void Map::enum_maps()
     for (boost::filesystem::directory_iterator dir_iter(path);
          dir_iter != end_iter; dir_iter++) {
       if (dir_iter->path().extension() == ".map") {
-        map_list.push_back(new MapEntry(path, dir_iter->filename()));
+        map_list.push_back(new MapEntry(path, dir_iter->path().filename()));
       }
     }
   }
@@ -126,7 +126,7 @@ void Map::enum_maps()
     for (boost::filesystem::directory_iterator dir_iter(path);
          dir_iter != end_iter; dir_iter++) {
       if (dir_iter->path().extension() == ".map") {
-        map_list.push_back(new MapEntry(path, dir_iter->filename()));
+        map_list.push_back(new MapEntry(path, dir_iter->path().filename()));
       }
     }
   }

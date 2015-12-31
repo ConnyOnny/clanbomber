@@ -50,7 +50,7 @@ MapEntry::MapEntry(boost::filesystem::path _path,
   enabled = true;
 
   // extract map name
-  map_name = filename.stem();
+  map_name = filename.stem().native();
 
   // is the file writable?
   if (access(path / filename, W_OK) == 0) {
