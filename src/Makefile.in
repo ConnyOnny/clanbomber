@@ -343,7 +343,8 @@ LDADD = \
 	$(BOOST_ASIO_LIB) \
 	$(BOOST_SYSTEM_LIB) \
 	$(BOOST_FILESYSTEM_LIB) \
-	$(BOOST_THREAD_LIB)
+	$(BOOST_THREAD_LIB) \
+	-lpthread
 
 clanbomber2_SOURCES = Bomb.cpp Bomb.h Bomber.cpp Bomber.h \
 	Bomber_Corpse.cpp Bomber_Corpse.h Chat.cpp Chat.h \
