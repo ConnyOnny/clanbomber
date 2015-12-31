@@ -1,0 +1,11 @@
+Makefile
+config.h
+config.log
+config.status
+po/Makefile.in
+po/POTFILES
+.deps
+src/menuentry/clanbomber.desktop
+stamp-h1
+*.o
+*.a
